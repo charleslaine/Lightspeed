@@ -15,6 +15,6 @@
 	<key>url</key>
 	<string>https://zzw3k2tgpf.execute-api.us-west-2.amazonaws.com/development/classroom/device_policy</string>
 	<key>interval</key>
-	<integer>60</integer>
+	<integer>30</integer>
 </dict>
 </plist>

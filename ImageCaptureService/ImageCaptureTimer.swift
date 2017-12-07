@@ -25,7 +25,7 @@ class ImageCaptureTimer
 {
     //MARK: Properties of ImageCaptureTimer
     var timer = Timer() //NSTimer
-    var delayInterval: Int = 60
+    var delayInterval: Int = 30 //this value is replaced in init by a value from the plist
     var maxTimerLimit: Int? //optional.  If nil, timer will run indefinitely
     var isTimerRunning: Bool = false
   
@@ -91,7 +91,7 @@ class ImageCaptureTimer
         //at least it doesn't leak!
         print("in ImageCaptureTimer::doTimer()")
 
-        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(ImageCaptureTimer.updateTimerWrapper), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(self.delayInterval as Int), target: self, selector: #selector(ImageCaptureTimer.updateTimerWrapper), userInfo: nil, repeats: true)
         isTimerRunning = true
     }
 
@@ -200,7 +200,7 @@ class ImageCaptureTimer
             self.captureDesktopImage(folderName: "/tmp/") //don't forget the tailing slash! 
             
             //TODO: This image does not need to be written out to a file. Instead just retain the bitmap and pass it directly into the request.
-            //But seriousy I've been awake now for going on nearly 24 hours now and my brain is really starting to shut down.  Gotta call it where it is.
+            //I've been awake now for going on nearly 24 hours now and my brain is really starting to shut down.  Gotta call it where it is.
             
             //body
             //TODO: Blocked with a status 412 on the http request.
@@ -268,6 +268,23 @@ class ImageCaptureTimer
         //Several ways to go about this.  Use the scripting bridge and include a simple AppleSript in the bundle that iterates over the window and gets all the tabs.
         //OR, more cumbersomely, use the Accessibility API.  The problem with Accessibility these days is Apple's restrictive permissions.  It has to be
         //explictely enabled per app by the user and there is no longer any sort of silent workaround to this like there used to be back in the old timey days.
+ 
+        //Regarding the detection of application launch...
+        //I've written a previous application that detected when a browser was launched, terminated, etc.
+        //This is achieved by using NSWorkspace, as shown in this example
+        
+//        NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
+//
+//        //Register the observer for application activation notifications    (NOTE: these appear BEFORE a launch notification)
+//        [[workspace notificationCenter] addObserver:self
+//            selector:@selector(applicationActivated:)
+//            name:NSWorkspaceDidActivateApplicationNotification
+//            object:workspace];
+
+        //In the implementaion of applicationLaunched:(NSNotification *)notification, you can get then extract the bundle identifier from the
+        //notification object to see if it is Safari or not (com.apple.Safari)
+
+    
     }
 
     func captureDesktopImage(folderName: String){
@@ -304,9 +321,10 @@ class ImageCaptureTimer
         }
     }
     func deleteDesktopImage(){
-        //TODO: Delete the screenshot, or better yet, don't create a file to begin with. Just pass the bitmap straight into the request
-        //But oh the humanity, I'm out of time.
-        //And, for testing purposes, creating an actual file had its merits.  I did confirm that the code was indeed capturing an actual image.
+        //TODO: Remove this unnecessary function. Instead of writing and deleting the a file, pass the bitmap straight into the request
+        //But oh the humanity, I'm out of time!
+        //And, for testing purposes, creating an actual file had its merits.  I did confirm that the app was indeed capturing
+        //actual desktop images on a 30 second interval per the specifications of this test.
     }
 
     
