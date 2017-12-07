@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1A0FB81FD985A60065D075 /* String+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1A0FB71FD985A60065D075 /* String+Shortcuts.swift */; };
+		BFBC35131FD7F628005330D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC35121FD7F628005330D2 /* AppDelegate.swift */; };
+		BFBC35151FD7F628005330D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBC35141FD7F628005330D2 /* Assets.xcassets */; };
+		BFBC35181FD7F628005330D2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFBC35161FD7F628005330D2 /* MainMenu.xib */; };
+		BFBC35211FD8017F005330D2 /* ImageCaptureTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBC35201FD8017F005330D2 /* ImageCaptureTimer.swift */; };
+		BFBC35251FD94F2C005330D2 /* imageCaptureDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFBC35241FD94F2C005330D2 /* imageCaptureDefaults.plist */; };
+		BFE35B8E1FD9997000E5BF9A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = BFE35B8D1FD9996F00E5BF9A /* LICENSE.txt */; };
+		BFE35B901FD9997500E5BF9A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BFE35B8F1FD9997400E5BF9A /* README.md */; };
+		BFE35B981FD99B6400E5BF9A /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE35B971FD99B6300E5BF9A /* STPrivilegedTask.m */; };
+		BFE35B9A1FD9A2F400E5BF9A /* enableScreenSharing.sh in Resources */ = {isa = PBXBuildFile; fileRef = BFE35B991FD9A2F300E5BF9A /* enableScreenSharing.sh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF1A0FB71FD985A60065D075 /* String+Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Shortcuts.swift"; sourceTree = "<group>"; };
+		BFBC350F1FD7F628005330D2 /* ImageCaptureService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCaptureService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBC35121FD7F628005330D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFBC35141FD7F628005330D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFBC35171FD7F628005330D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BFBC35191FD7F628005330D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBC351A1FD7F628005330D2 /* ImageCaptureService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageCaptureService.entitlements; sourceTree = "<group>"; };
+		BFBC35201FD8017F005330D2 /* ImageCaptureTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaptureTimer.swift; sourceTree = "<group>"; };
+		BFBC35241FD94F2C005330D2 /* imageCaptureDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = imageCaptureDefaults.plist; sourceTree = "<group>"; };
+		BFE35B8D1FD9996F00E5BF9A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		BFE35B8F1FD9997400E5BF9A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BFE35B921FD99B1E00E5BF9A /* STPrivilegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
+		BFE35B961FD99B6200E5BF9A /* ImageCaptureService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageCaptureService-Bridging-Header.h"; sourceTree = "<group>"; };
+		BFE35B971FD99B6300E5BF9A /* STPrivilegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
+		BFE35B991FD9A2F300E5BF9A /* enableScreenSharing.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = enableScreenSharing.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFBC350C1FD7F628005330D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFBC35061FD7F628005330D2 = {
+			isa = PBXGroup;
+			children = (
+				BFBC35111FD7F628005330D2 /* ImageCaptureService */,
+				BFBC35101FD7F628005330D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFBC35101FD7F628005330D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFBC350F1FD7F628005330D2 /* ImageCaptureService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFBC35111FD7F628005330D2 /* ImageCaptureService */ = {
+			isa = PBXGroup;
+			children = (
+				BFBC35121FD7F628005330D2 /* AppDelegate.swift */,
+				BFBC35201FD8017F005330D2 /* ImageCaptureTimer.swift */,
+				BF1A0FB71FD985A60065D075 /* String+Shortcuts.swift */,
+				BFE35B881FD9991F00E5BF9A /* STPrivilegedTask */,
+				BFBC351A1FD7F628005330D2 /* ImageCaptureService.entitlements */,
+				BFBC35241FD94F2C005330D2 /* imageCaptureDefaults.plist */,
+				BFE35B991FD9A2F300E5BF9A /* enableScreenSharing.sh */,
+				BFBC35191FD7F628005330D2 /* Info.plist */,
+				BFBC35161FD7F628005330D2 /* MainMenu.xib */,
+				BFBC35141FD7F628005330D2 /* Assets.xcassets */,
+			);
+			path = ImageCaptureService;
+			sourceTree = "<group>";
+		};
+		BFE35B881FD9991F00E5BF9A /* STPrivilegedTask */ = {
+			isa = PBXGroup;
+			children = (
+				BFE35B971FD99B6300E5BF9A /* STPrivilegedTask.m */,
+				BFE35B921FD99B1E00E5BF9A /* STPrivilegedTask.h */,
+				BFE35B8D1FD9996F00E5BF9A /* LICENSE.txt */,
+				BFE35B8F1FD9997400E5BF9A /* README.md */,
+				BFE35B961FD99B6200E5BF9A /* ImageCaptureService-Bridging-Header.h */,
+			);
+			path = STPrivilegedTask;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFBC350E1FD7F628005330D2 /* ImageCaptureService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBC351D1FD7F628005330D2 /* Build configuration list for PBXNativeTarget "ImageCaptureService" */;
+			buildPhases = (
+				BFBC350B1FD7F628005330D2 /* Sources */,
+				BFBC350C1FD7F628005330D2 /* Frameworks */,
+				BFBC350D1FD7F628005330D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageCaptureService;
+			productName = ImageCaptureService;
+			productReference = BFBC350F1FD7F628005330D2 /* ImageCaptureService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFBC35071FD7F628005330D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Charles Laine";
+				TargetAttributes = {
+					BFBC350E1FD7F628005330D2 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BFBC350A1FD7F628005330D2 /* Build configuration list for PBXProject "ImageCaptureService" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFBC35061FD7F628005330D2;
+			productRefGroup = BFBC35101FD7F628005330D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFBC350E1FD7F628005330D2 /* ImageCaptureService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFBC350D1FD7F628005330D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE35B9A1FD9A2F400E5BF9A /* enableScreenSharing.sh in Resources */,
+				BFE35B8E1FD9997000E5BF9A /* LICENSE.txt in Resources */,
+				BFBC35151FD7F628005330D2 /* Assets.xcassets in Resources */,
+				BFE35B901FD9997500E5BF9A /* README.md in Resources */,
+				BFBC35251FD94F2C005330D2 /* imageCaptureDefaults.plist in Resources */,
+				BFBC35181FD7F628005330D2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBC350B1FD7F628005330D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBC35131FD7F628005330D2 /* AppDelegate.swift in Sources */,
+				BFBC35211FD8017F005330D2 /* ImageCaptureTimer.swift in Sources */,
+				BFE35B981FD99B6400E5BF9A /* STPrivilegedTask.m in Sources */,
+				BF1A0FB81FD985A60065D075 /* String+Shortcuts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFBC35161FD7F628005330D2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBC35171FD7F628005330D2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFBC351B1FD7F628005330D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				"SWIFT_PRECOMPILE_BRIDGING_HEADER[arch=*]" = YES;
+			};
+			name = Debug;
+		};
+		BFBC351C1FD7F628005330D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				"SWIFT_PRECOMPILE_BRIDGING_HEADER[arch=*]" = YES;
+			};
+			name = Release;
+		};
+		BFBC351E1FD7F628005330D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3E5574W5V2;
+				INFOPLIST_FILE = ImageCaptureService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = claine.ImageCaptureService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageCaptureService/STPrivilegedTask/ImageCaptureService-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		BFBC351F1FD7F628005330D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3E5574W5V2;
+				INFOPLIST_FILE = ImageCaptureService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = claine.ImageCaptureService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageCaptureService/STPrivilegedTask/ImageCaptureService-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFBC350A1FD7F628005330D2 /* Build configuration list for PBXProject "ImageCaptureService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBC351B1FD7F628005330D2 /* Debug */,
+				BFBC351C1FD7F628005330D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBC351D1FD7F628005330D2 /* Build configuration list for PBXNativeTarget "ImageCaptureService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBC351E1FD7F628005330D2 /* Debug */,
+				BFBC351F1FD7F628005330D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFBC35071FD7F628005330D2 /* Project object */;
+}

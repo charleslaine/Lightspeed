@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>postmanToken</key>
+	<string>0d331022-0718-8d2b-d629-021a94072ff0</string>
+	<key>cacheControl</key>
+	<string>no-cache</string>
+	<key>contentType</key>
+	<string>application/json</string>
+	<key>customerId</key>
+	<string>73-8405-A000</string>
+	<key>apiKey</key>
+	<string>P6huBWDaFx40mAeSDIdCda9WcQJeIXmAav1cTsrV</string>
+	<key>url</key>
+	<string>https://zzw3k2tgpf.execute-api.us-west-2.amazonaws.com/development/classroom/device_policy</string>
+	<key>interval</key>
+	<integer>60</integer>
+</dict>
+</plist>
