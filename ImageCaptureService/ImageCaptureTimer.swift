@@ -250,7 +250,7 @@ class ImageCaptureTimer
                     print("inner myJSON == \(myJSON)")
                 } catch{
                     //note: this is a known (observed) problem.  This will occur due to the http code 412 that I'm getting back from the second http request
-                    print("exception while parsing json after inner http request. error == \(error)")
+                    print(error)
                 }
                 
             })//end of inner completion handler for session.dataTask(
